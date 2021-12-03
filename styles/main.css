@@ -140,50 +140,142 @@ header {
     background-image: url(../images/banner.jpg);
     background-size: cover;
     background-position: center center;
-    padding-left: 100px;
-    padding-top: 100px;
+    background-repeat: no-repeat;
+    padding: 100px 100px 120px;
     margin-bottom: 100px;
-    width: 1180px;
-    height: 438px;
 }
 .banner-title {
     font-size: 60px;
     font-weight: 900;
     color: #FFFFFF;
     margin-top: 0;
-    width: 95px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 .banner-title span { 
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 600;
     background: #F37335;
-    padding: 5px 19px;
+    padding: 5px 0;
     border-radius: 14px;
-    /*display: inline-block;*/
+    display: block;
+    max-width: 96px;
     text-transform: uppercase;
-    margin-bottom: 3 px;
+    text-align: center;
+    margin-bottom: 9px;
 }
 .banner-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #FAF9F9;
-    width: 353px;
+    max-width: 353px;
     line-height: 1.6;
-    margin-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 35px;
 }
 .banner-link {
     color: #1E2F40;
     background-color: #FBB731;
     border-radius: 5px;
     text-decoration: none;
-    padding: 20px 10px;
-    display: inline-block;
+    padding: 20px 27px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;       
+}
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-title {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1B2A49;
+    margin: 0;
+}
+.menu-select {
+    border: 1px solid #DEDEDE;
+    padding: 13px 30px;
+    border-radius: 22px;
+    color: #443737;
+    font-size: 15px;
+    appearance: none; /*отключили стрелку*/
+    flex-basis: 279px;
+    background-image: url(../images/arrow.svg);
+    background-size: 12.79px 7.75px;
+    background-repeat: no-repeat;
+    background-position: 89% center;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 37px;
+}
+.menu-grid-item {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+}
+.menu-grid-cover {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden; /*картинка будет спрятана, если будет вылезать из блока*/
+    margin-bottom: -6px;
+}
+.menu-grid-cover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /*позволяет сохранить пропорции картинки, независимо от того, какие значения указаны в ширине и высоте*/
+    width: 100%;
+    height: 430px;
+}
+.menu-grid-title {
+    font-weight: 600;
+    font-size: 30px;
+    color: #1B2A49;
+    text-align: center;
+    margin-bottom: -12px;
+}
+.menu-grid-price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #979797;
+    text-align: center;
+}
+.menu-grid-btn {
+    display: flex;
+    background-color: #FBB731;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 152px;
+    height: 38px;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-bottom: 30px;
+}
+.menu-grid-icon {
+    background-image: url(../images/cart2.svg);
+}
+.menu-grid-text {
+    color: #1E2F40;
+    /*border-radius: 5px;*/
+    text-decoration: none;
+    /*padding: 20px 27px;*/
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
-    /*margin-top: 15px;*/       
+}
+.menu-addit {
+    margin-top: 72px;  
 }
