@@ -213,20 +213,17 @@ header {
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 50px 20px;
+    margin-bottom: 100px;
     margin-top: 37px;
-}
-.menu-grid-item {
-    display: flex;
-    flex-direction: column;
-    /*justify-content: center;*/
+    text-align: center;
 }
 .menu-grid-cover {
     width: 100%;
     height: 430px;
     position: relative;
     overflow: hidden; /*картинка будет спрятана, если будет вылезать из блока*/
-    margin-bottom: -6px;
+    margin-bottom: 24px;
 }
 .menu-grid-cover img {
     position: absolute;
@@ -241,14 +238,15 @@ header {
     font-weight: 600;
     font-size: 30px;
     color: #1B2A49;
-    text-align: center;
-    margin-bottom: -12px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 .menu-grid-price {
     font-weight: 700;
     font-size: 20px;
     color: #979797;
-    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 22px;
 }
 .menu-grid-btn {
     display: flex;
@@ -257,25 +255,90 @@ header {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    width: 152px;
-    height: 38px;
-    gap: 10px;
+    padding: 10px 32px;
+    gap: 9px;
     cursor: pointer;
-    margin-top: 3px;
-    margin-bottom: 30px;
+    margin: 0 auto;
 }
 .menu-grid-icon {
-    background-image: url(../images/cart2.svg);
+    background-image: url(../images/cart-menu.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 18px;
+    height: 18px;
 }
 .menu-grid-text {
     color: #1E2F40;
-    /*border-radius: 5px;*/
-    text-decoration: none;
-    /*padding: 20px 27px;*/
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
 }
-.menu-addit {
-    margin-top: 72px;  
+.p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
+.footer {
+    background: #1E2F40;
+    color: #fff;
+    padding-top: 117px;
+    padding-bottom: 106px;
+    margin-top: 140px;
+}
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    width: 63px;
+    height: 56px;
+}
+.footer-item {
+    flex: 0 0 auto;
+}
+.footer-item h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+.footer-item ul,
+.footer-tel ul {
+   
+}
+.footer-item li {
+    margin-bottom: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #FAF9F9;
+    font-weight: 700;
+    line-height: 24px;
+}
+.footer-item a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-item span {
+    color: #DEDEDE;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.footer-tel ul {
+    font-size: 20px;
+    font-weight: 900;
+    color:#FBB731;
+    margin-top: 0;
+}
+.footer-tel li {
+    margin-bottom: 12px;
+}
+.footer-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
