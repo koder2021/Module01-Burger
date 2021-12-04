@@ -304,6 +304,7 @@ header {
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 19px;
+    margin-top: 0;
 }
 .footer-item li {
     margin-bottom: 9px;
